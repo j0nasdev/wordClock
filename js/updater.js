@@ -1,6 +1,6 @@
 "use strict";
 
-setInterval(() => {
+const update = () => {
     // Aktuelle Uhrzeit bekommen
     getTime();
 
@@ -9,4 +9,15 @@ setInterval(() => {
 
     // Uhrzeit in der WortUhr anzeigen
     showTime();
+}
+
+// Wird ausgeführt bei Start
+
+window.addEventListener("load", () => {
+    update();
+});
+
+setInterval(() => {
+    update();
 }, 1000);
+

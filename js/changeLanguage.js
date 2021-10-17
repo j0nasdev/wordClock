@@ -24,7 +24,11 @@ german.addEventListener("click", () => {
 
 english.addEventListener("click", () => {
     changeLanguage(english);
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 1c228e122ef34138e80e98786e57201ebd49a74b
     document.getElementById("contentWordClockID").remove();
     showLettersForWordClock(englishLanguage);
 });

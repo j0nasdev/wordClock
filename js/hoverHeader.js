@@ -19,7 +19,7 @@ const showShadow = (e) => {
     //     (x * -1) + "px " + (y * -1) + "px " + "0 rgba(240, 55, 165, 0.2)," +       // GELB
     //     (x * 1) + "px " + (y * 1) + "px " + "0 rgba(240, 55, 165, 0.2)";           // BLAU
 
-    header.style.textShadow = 
+    header.style.boxShadow = 
         (x * -2) + "px " + (y * -2) + "px " + "0 rgba(255, 0, 255, 0.4)," +       // LILA
         (x * -1) + "px " + (y * -1) + "px " + "0 rgba(255, 255, 0, 0.4)," +       // GELB
         (x * 1) + "px " + (y * 1) + "px " + "0 rgba(0, 255, 255, 0.4)";           // BLAU
@@ -28,7 +28,7 @@ const showShadow = (e) => {
 const deleteShadow = () => {
     deleteShadowTimer = setTimeout(() => {
         header.style.transition = "0.3s ease-in";
-        header.style.textShadow = "20px 20px 0px rgba(0, 0, 0, 0)";
+        header.style.boxShadow = "20px 20px 0px rgba(0, 0, 0, 0)";
 
         deleteTransitionTimer = setTimeout(() => {
             header.style.transition = "";

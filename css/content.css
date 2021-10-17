@@ -1,0 +1,290 @@
+.container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.headline {
+    color: var(--color-pink);
+    font-size: 50px;
+}
+
+.headline:hover {
+    cursor: none;
+}
+
+.headline span {
+    color: var(--color-white);
+}
+
+.introText {
+    color: var(--color-white);
+    margin: 10px 0px 10px 0px;
+    font-weight: 400;
+}
+
+.colorPink {
+    color: var(--color-pink);
+}
+
+
+/* CHANGE LANGUAGES */
+
+.languagesContainer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: var(--color-white);
+}
+
+.germanContainer, .englishContainer {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.germanContainer:hover, .englishContainer:hover {
+    cursor: pointer;
+}
+
+.languageActive {
+    color: var(--color-blue);
+    background-color: var(--color-white);
+}
+
+
+/* WORDCLOCK */
+.wordClockContainer {
+    width: 90vw;
+    height: 90vw;
+    margin-bottom: 10px;
+    background-color: var(--color-white);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.4s ease;
+}
+
+.letter {
+    display: inline-flex;
+    opacity: 0.5;
+    color: var(--color-blue);
+    font-size: 0.7em;
+    width: 5.5vw;
+    height: 5.5vw;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 1px;
+}
+
+.active {
+    color: var(--color-pink);
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 20%);
+    opacity: 1;
+}
+
+
+/* MINUTES AND MORE */
+
+.minutesMoreContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    height: 80px;
+    background-color: var(--color-white);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 30px;
+    transition: box-shadow 0.4s ease;
+}
+
+.minutesMoreContainer:hover {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.minutesContainer p {
+    color: var(--color-blue);
+    margin-bottom: 20px;
+}
+
+.minutesContainer span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+    border-radius: 100%;
+}
+
+.minuteDot {
+    background-color: var(--color-gray);
+}
+
+.minuteDot:hover {
+    cursor: pointer;
+}
+
+.minuteDotActive {
+    background-color: var(--color-blue)!important;
+}
+
+.moreContainer {
+    margin-left: auto;
+    text-align: end;
+}
+
+.moreContainer i {
+    font-size: 18px;
+    color: var(--color-blue);
+    margin-bottom: 20px;
+    transition: color 0.2s ease;
+}
+
+.moreContainer i:hover {
+    color: var(--color-pink);
+    cursor: pointer;
+}
+
+.moreContainer p {
+    color: var(--color-blue);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.moreContainer p:hover {
+    color: var(--color-pink);
+    cursor: pointer;
+}
+
+.minuteActive {
+    background-color: var(--color-blue);
+}
+
+.helpContainer {
+    width: 300px;
+    height: 100px;
+    padding: 5px;
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 100;
+}
+
+.buttonContainer {
+    position: absolute;
+    left: 5vw;
+    top: 40vh;
+}
+
+.buttonContainer button {
+    height: 30px;
+    width: 50px;
+}
+
+.buttonContainer input {
+    height: 30px;
+    width: 105px;
+}
+
+.buttonContainer p {
+    color: var(--color-white);
+}
+
+
+/* More Information */
+.cardMiddle {
+    width: 30vw;
+    height: 15vh;
+    position: absolute;
+    top: 53vh;
+    right: 11vw;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.363);
+    z-index: 50;
+
+}
+
+.cardTop {
+    width: 30vw;
+    height: 15vh;
+    position: absolute;
+    top: 38vh;
+    right: 11vw;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    z-index: 35;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.363);
+    transform: scale(0.8, 0.8);
+    filter: blur(2px);
+}
+
+.cardBottom {
+    width: 30vw;
+    height: 15vh;
+    position: absolute;
+    top: 68vh;
+    right: 11vw;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    z-index: 35;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.363);
+    transform: scale(0.8, 0.8);
+    filter: blur(2px);
+}
+
+.hoverParagraph {
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 30px;
+}
+
+.arrowUp {
+    position: absolute;
+    left: 47%;
+    top: 5%;
+    font-size: 20px;
+}
+
+
+.arrowUp:hover {
+    cursor: pointer;
+    left: 46.8%;
+    top: 5%;
+    font-size: 24px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+}
+
+.arrowDown {
+    position: absolute;
+    left: 47%;
+    top: 80%;
+    font-size: 20px;
+}
+
+.arrowDown:hover {
+    cursor: pointer;
+    left: 46.8%;
+    top: 80%;
+    font-size: 24px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+}

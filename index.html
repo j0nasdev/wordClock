@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon"href="./img/clock.png">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/background.css">
+        <link rel="stylesheet" href="css/content.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/animation.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>WordClock</title>
+    </head>
+    <body>
+        <!-- BACKGROUND -->
+        <div class="background">
+            <div class="backgroundTop"></div>
+            <svg class="backgroundWave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 272.83" preserveAspectRatio="none">
+                <defs></defs><title>Untitled-1</title>
+                <path d="M0,470V663s401.67-248.64,833.84-83.82,653.7,268.62,990.43-6.78L1920,497V470Z" transform="translate(0 -470)"/>
+                <path d="M1920,470" transform="translate(0 -470)"/>
+            </svg>
+            <svg class="backgroundWaveSmall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1924.37 229.2" preserveAspectRatio="none">
+                <defs></defs><title>Untitled-1</title>
+                <path class="cls-1" d="M-.5,292.5h1920s-445,218-938,228C495.5,528.5-.5,292.5-.5,292.5Z" transform="translate(2.71 -292)"/>
+            </svg>
+        </div>
+        <!-- CONTENT -->
+        <div class="container">
+            <!-- HEADER -->
+            <div class="header">
+                <h2 class="headline" id="wordClockNameID"><span>W</span>ord<span>C</span>lock</h2>
+                <p class="introText">WortUhr erstellt von <span class="colorPink">Jonas</span></p>
+            </div>
+            <div class="languagesWordClockContainer">
+                <!-- LANGUAGES -->
+                <div class="languagesContainer">
+                    <div class="language englishContainer" id="englishID">
+                        <p class="languageText">Englisch</p>
+                    </div>
+                    <div class="language germanContainer languageActive" id="germanID">
+                        <p class="languageText">Deutsch</p>
+                    </div>
+                </div>
+                <!-- WORDCLOCK -->
+                <div class="wordClockContainer" id="containerWordClockID"></div>
+                <!-- More Information -->
+                <div class="hoverContainer" id="hoverContainerID" style="display: none;">
+                    <div class="card cardTop" id="cardTopID">
+                        <p class="hoverParagraph" id="hoverHours">Stunde: 0</p>
+                    </div>
+                    <div class="card cardMiddle" id="cardMiddleID">
+                        <p class="hoverParagraph" id="minuteCounter">Minute: 0</p>
+                    </div>
+                    <div class="card cardBottom" id="cardBottomID">
+                        <p class="hoverParagraph" id="hoverDay">Tag: 0</p>
+                    </div>
+                </div>
+            </div>
+            <!-- MINUTES AND MORE -->
+            <div class="minutesMoreContainer">
+                <div class="minutesContainer">
+                    <p>Minuten</p>
+                    <span class="minuteDot" id="minuteDotOneID"></span>
+                    <span class="minuteDot" id="minuteDotTwoID"></span>
+                    <span class="minuteDot" id="minuteDotThreeID"></span>
+                    <span class="minuteDot" id="minuteDotFourID"></span>
+                </div>
+                <div class="moreContainer">
+                    <i class="fas fa-info-circle" id="desktopMinutesHelpIconID"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="./js/isBetween.js"></script>
+        <script src="./js/isLanguageActive.js"></script>
+        <script src="./js/getTime.js"></script>
+        <script src="./js/showMinutes.js"></script>
+        <script src="./js/updater.js"></script>
+        <script src="./js/hoverHeader.js"></script>
+        <script src="./js/languages.js"></script>
+        <script src="./js/showLettersForWordClock.js"></script>
+        <script src="./js/activateLetters.js"></script>
+        <script src="./js/isFullHour.js"></script>
+        <script src="./js/deactivateLetters.js"></script>
+        <script src="./js/getHours.js"></script>
+        <script src="./js/changeLanguage.js"></script>
+        <script src="./js/germanWordClock.js"></script>
+        <script src="./js/englishWordClock.js"></script>
+        <script src="./js/showTime.js"></script>
+        <script src="./js/minutesHelp.js"></script>
+    </body>
+</html>

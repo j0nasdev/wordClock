@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    --color-white: #F8F8F8;
+    --color-pink: #F037A5;
+    --color-blue: #1E3163;
+    --color-gray: #B1B1B1;
+}

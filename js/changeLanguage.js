@@ -25,7 +25,6 @@ german.addEventListener("click", () => {
 english.addEventListener("click", () => {
     changeLanguage(english);
     
-    removeLetters();
     document.getElementById("contentWordClockID").remove();
     showLettersForWordClock(englishLanguage);
 });

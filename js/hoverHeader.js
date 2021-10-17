@@ -14,15 +14,15 @@ const showShadow = (e) => {
     var x = Math.round((e.x / 200 * gap) - (gap / 2));
     var y = Math.round((e.y / 200 * gap) - (gap / 2));
 
-    header.style.textShadow = 
-        (x * -2) + "px " + (y * -2) + "px " + "0 rgba(240, 55, 165, 0.2)," +       // LILA
-        (x * -1) + "px " + (y * -1) + "px " + "0 rgba(240, 55, 165, 0.2)," +       // GELB
-        (x * 1) + "px " + (y * 1) + "px " + "0 rgba(240, 55, 165, 0.2)";           // BLAU
-
     // header.style.textShadow = 
-    //     (x * -2) + "px " + (y * -2) + "px " + "0 rgba(255, 0, 255, 0.4)," +       // LILA
-    //     (x * -1) + "px " + (y * -1) + "px " + "0 rgba(255, 255, 0, 0.4)," +       // GELB
-    //     (x * 1) + "px " + (y * 1) + "px " + "0 rgba(0, 255, 255, 0.4)";           // BLAU
+    //     (x * -2) + "px " + (y * -2) + "px " + "0 rgba(240, 55, 165, 0.2)," +       // LILA
+    //     (x * -1) + "px " + (y * -1) + "px " + "0 rgba(240, 55, 165, 0.2)," +       // GELB
+    //     (x * 1) + "px " + (y * 1) + "px " + "0 rgba(240, 55, 165, 0.2)";           // BLAU
+
+    header.style.textShadow = 
+        (x * -2) + "px " + (y * -2) + "px " + "0 rgba(255, 0, 255, 0.4)," +       // LILA
+        (x * -1) + "px " + (y * -1) + "px " + "0 rgba(255, 255, 0, 0.4)," +       // GELB
+        (x * 1) + "px " + (y * 1) + "px " + "0 rgba(0, 255, 255, 0.4)";           // BLAU
 }
 
 const deleteShadow = () => {

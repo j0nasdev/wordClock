@@ -2,7 +2,7 @@
 
 Eine Uhr die die Uhrzeit mit Wörtern anzeigt.
 <br>
-Live-example: http://jonas-bewerbung.de/
+Live-ansicht: http://jonas-bewerbung.de/
 <br>
 <br>
 <br>
